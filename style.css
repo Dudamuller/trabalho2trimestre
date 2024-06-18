@@ -1,0 +1,36 @@
+
+.elem {
+  background: blue;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  animation: moveToLeft 5s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(0px);
+    background: linear-gradient(
+      to right,100%
+     
+    
+    );
+  }
+  25% {
+    transform: translateX(400px);
+    background: linear-gradient(120deg, #f80606 0%, #f80606 100%);
+  }
+  50% {
+    transform: translateY(200px) translateX(400px);
+    background: linear-gradient(to top, #02c76b 0%, #02c76b 100%);
+  }
+
+  75% {
+    transform: translateX(0px) translateY(200px);
+    background: linear-gradient(120deg, #f6d365 0%, #f6d365 100%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
